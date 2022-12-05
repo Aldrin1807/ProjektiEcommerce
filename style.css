@@ -86,10 +86,13 @@ header{
     margin-top: 10px;
     width: 306px;
 }
+#requirements li{
+    list-style: circle;
+    color: black;
+}
 main{
     margin-top: 100px;
     display: flex;
-    height: 100px;
     justify-content: space-between;
     flex-wrap:wrap;
 }
