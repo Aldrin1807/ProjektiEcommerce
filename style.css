@@ -1,3 +1,4 @@
+
 header{
     display: flex;
     justify-content: space-between;
@@ -54,7 +55,10 @@ header{
     border: solid 0.5px #07484a;
     padding-left: 20px;
 }
-
+a{
+    text-decoration: none;
+    color: black;
+}
 .log p{
     font-size: large;
     color: #07484a;
@@ -96,6 +100,7 @@ main{
     display: flex;
     justify-content: space-between;
     flex-wrap:wrap;
+    margin-bottom: 100px;
 }
 .produktet{
     margin-top: 100px;
@@ -123,16 +128,38 @@ main{
     border-color: #07484a;
 }
 footer{
-    margin-top: 20px;
+    margin-top: 100px;
     display: flex;
     justify-content: space-evenly;
     background-color: #07484a;
     color: white;
-
 }
 footer a, li{
     color: white;
     list-style: none;
     margin-top: 10px;
     text-decoration: none;
+}
+#main{
+    margin: 0 auto;
+    margin-top: 100px;
+    margin-bottom: 190px;
+    border: solid;
+    display: flex;
+    justify-content: space-between;
+    padding-right: 60px;
+    width: 700px;
+    height: 400px;
+}
+#main button{
+    height: 30px;
+    width: 100px;
+    background-color: white;
+    border-color: #07484a;
+    border-radius: 20px;
+    cursor: pointer;
+}
+#main button:hover{
+    background-color: #07484a;
+    color: white;
 }
