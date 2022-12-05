@@ -67,3 +67,11 @@ header{
     color: white;
     cursor: pointer;
 }
+#fname, #lname{
+    margin-top: 13px;
+
+}
+.log{
+    background-color: rgb(132, 147, 147);
+
+}
