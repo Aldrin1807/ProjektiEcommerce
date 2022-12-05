@@ -118,3 +118,17 @@ main{
     height: 30px;
     border-color: #07484a;
 }
+footer{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #07484a;
+    color: white;
+
+}
+footer a, li{
+    color: white;
+    list-style: none;
+    margin-top: 10px;
+    text-decoration: none;
+}
