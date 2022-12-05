@@ -1,0 +1,27 @@
+*{
+    /* border: 0.5px solid; */
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+}
+.kategorite{
+    display: flex;
+    justify-content: space-between;
+    width: 500px;
+    align-items: center;
+    margin-left: 600px;
+    
+}
+.kategorite a{
+    color: #07484a;
+    font-size: 20px;
+    text-decoration: none;
+}
+.ikonat{
+    display: flex;
+    justify-content: space-between;
+    width: 250px;
+    margin-right: 100px;
+}
