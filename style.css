@@ -35,7 +35,7 @@ header{
 }
 .log{
     border: 1px solid;
-    height: 500px;
+    height: 600px;
     width: 400px;
     margin: 0 auto;
     margin-top: 100px;
@@ -53,6 +53,7 @@ header{
     border: solid 0.5px #07484a;
     padding-left: 20px;
 }
+
 .log p{
     font-size: large;
     color: #07484a;
@@ -60,18 +61,28 @@ header{
 }
 .log button{
     height: 40px;
-    width: 100px;
+    width: 150px;
     border-radius: 20px;
     border: solid 0.5px #07484a;
     background-color: #07484a;
     color: white;
     cursor: pointer;
+    font-size: medium;
+    
 }
 #fname, #lname{
-    margin-top: 13px;
-
+    width: 130px;
+    margin: 10px;
 }
-.log{
-    background-color: rgb(132, 147, 147);
-
+#info{
+    display: flex;
+    margin-bottom: -10px;
+}
+#info2{
+    display: flex;
+    flex-direction: column;
+}
+#info2 input{
+    margin-top: 10px;
+    width: 306px;
 }
