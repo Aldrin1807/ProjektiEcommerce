@@ -1,23 +1,42 @@
-// function validate(){
-//     firstN = document.getElementById("fname").value;
-//     lastN = document.getElementById("lname").value;
-//     userName = document.getElementById("uName").value;
-//     Email = document.getElementById("email").value;
-//     passW = document.getElementById("pass").value;
-//     if(firstN==''||lastN==''||userName==''||Email==''||passW==''){
-//         document.getElementById("fname").style.borderColor = "red";
-//         document.getElementById("lname").style.borderColor = "red";
-//         document.getElementById("uName").style.borderColor = "red";
-//         document.getElementById("email").style.borderColor = "red";
-//         document.getElementById("pass").style.borderColor = "red";
-//     }else{
-//         document.getElementById("fname").style.borderColor = "black";
-//         document.getElementById("lname").style.borderColor = "black";
-//         document.getElementById("uName").style.borderColor = "black";
-//         document.getElementById("email").style.borderColor = "black";
-//         document.getElementById("pass").style.borderColor = "black";
-//     }
-// }
+function validate(){
+    firstN = document.getElementById("fname").value;
+    lastN = document.getElementById("lname").value;
+    userName = document.getElementById("uName").value;
+    Email = document.getElementById("email").value;
+    passW = document.getElementById("pass").value;
+    var letters = /^[A-Za-z]+$/;
+    if(firstN==''&&lastN==''&&userName==''&&Email==''&&passW==''){
+        document.getElementById("fname").style.borderColor = "red";
+        document.getElementById("lname").style.borderColor = "red";
+        document.getElementById("uName").style.borderColor = "red";
+        document.getElementById("email").style.borderColor = "red";
+        document.getElementById("pass").style.borderColor = "red";
+        console.log("All wrong");
+    }
+      else {
+        document.getElementById("fname").style.borderColor = "black";
+        document.getElementById("lname").style.borderColor = "black";
+        document.getElementById("uName").style.borderColor = "black";
+        document.getElementById("email").style.borderColor = "black";
+        document.getElementById("pass").style.borderColor = "black";
+        if(firstN==''||firstN.length<2){
+            document.getElementById("fname").style.borderColor = "red";
+            console.log("first name wrong");
+        }if(lastN==''||lastN.length<2){
+            document.getElementById("lname").style.borderColor = "red";
+            console.log("last name wrong");
+        }if(userName==''||userName.match(letters)){
+            document.getElementById("uName").style.borderColor = "red";
+            console.log("username wrong");
+        }if(Email==''||!(Email.includes('@') && Email.includes('.com'))){
+            document.getElementById("email").style.borderColor = "red";
+            console.log("email wrong");
+        }if(passW==''||passW.length<8){
+            document.getElementById("pass").style.borderColor = "red";
+            console.log("passW wrong");
+        }
+    }
+}
 // const slides = document.querySelectorAll(".slide");
 // var counter=0;
 // // console.log(slides);

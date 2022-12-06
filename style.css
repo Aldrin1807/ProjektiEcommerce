@@ -1,16 +1,18 @@
-
+/* *{
+    transition:ease-in 1s;
+} */
 header{
     display: flex;
     justify-content: space-between;
     height: 50px;
+    
 }
 .kategorite{
     display: flex;
     justify-content: space-between;
     width: 500px;
     align-items: center;
-    margin-left: 600px;
-    
+    padding-left: 600px; 
 }
 .kategorite a{
     color: #07484a;
@@ -37,7 +39,7 @@ header{
 }
 .log{
     border: 1px solid;
-    height: 600px;
+    height: 700px;
     width: 400px;
     margin: 0 auto;
     margin-top: 100px;
@@ -91,6 +93,9 @@ a{
     margin-top: 10px;
     width: 306px;
 }
+#requirements{
+    margin: 30px;
+}
 #requirements li{
     list-style: circle;
     color: black;
@@ -139,6 +144,9 @@ footer{
     justify-content: space-evenly;
     background-color: #07484a;
     color: white;
+    margin-bottom: -10px;
+    margin-right: -8px;
+    margin-left: -8px;
 }
 footer a, li{
     color: white;
@@ -190,4 +198,32 @@ footer a, li{
     flex-direction: column;
     padding: 100px;
     width: 1100px;
+}
+#mbajtesi{
+background:url(https://img.freepik.com/premium-photo/interior-bright-living-room-with-pillows-sofa-armchair-plants-lamp-empty-blue-wall-background_41470-708.jpg?w=2000);
+background-position-y: 90%;
+ height: 708px;
+ margin-left: -10px;
+ margin-right: -8px;
+ margin-bottom: -100px;
+ display: flex
+}
+#contentMbajtesi{
+    display: flex;
+    flex-direction: column;
+    padding: 200px;
+}
+#contentMbajtesi h1,p{
+    color: white;
+    font-weight: bolder;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#shop{
+    width: 200px;
+    height: 40px;
+    background-color: #07484a;
+    color: white;
+    border: none;
+    margin-top: 30px;
+    cursor: pointer;
 }
