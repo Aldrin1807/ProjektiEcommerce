@@ -74,7 +74,7 @@ a{
     border-radius: 20px;
     border: solid 0.5px #07484a;
     background-color: #07484a;
-    color: white;
+    color:white;
     cursor: pointer;
     font-size: medium;
     
@@ -232,3 +232,55 @@ background-position-y: 90%;
     margin-top: 30px;
     cursor: pointer;
 }
+.contact{
+    border: 1px solid;
+    height:600px;
+    width: 400px;
+    margin: 0 auto;
+    margin-top: 100px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border:solid 3px #07484a;
+    border-radius: 50px;
+    
+
+
+}
+.contact input{
+    width: 330px;
+    height: 50px;
+    border-radius: 15px;
+    border: solid 0.5px #07484a;
+    padding-left: 20px;
+    margin: 15px;
+}
+
+ .con{
+    font-size: 20px;
+    font-weight: bold;
+    color: #07484a;
+}
+
+
+
+input[type=textarea]{
+    height:200px ;
+    
+}
+.lo{
+    height: 40px;
+    width: 150px;
+    border-radius: 20px;
+    color:white;
+    
+    background-color: #26585a;
+    cursor: pointer;
+    border: solid 0.5px #07484a;
+    font-size: medium;
+
+    
+}
+
+
