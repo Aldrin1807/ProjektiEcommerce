@@ -33,4 +33,5 @@ function signUp(){
       }else{
         passwordi.style.border='2px solid green';
     }
+   // window.location.replace('../index.html');
 };
