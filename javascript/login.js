@@ -16,6 +16,12 @@ function login(){
       }
     }else{
       window.location.replace('../index.html');
-      // alert(`Pershendetje ${emaili.value}`);
+      alert(`Hello ${emailSplit(emaili.value)}, shortly you will be redirected to the homepage.`)
     }
-}
+};
+function emailSplit(email){
+  let e = email.split('@');
+  let user = e[0];
+  console.log(user);
+  return user;
+};
