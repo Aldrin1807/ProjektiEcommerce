@@ -280,7 +280,48 @@ input[type=textarea]{
     border: solid 0.5px #07484a;
     font-size: medium;
 
-    
 }
 
+.off{
+    margin-top: 15px;
+    height: 10pc;
+    background-color: rgb(0, 10, 100);
+    /* background:url(images/extra.jpg) ; */
+    border: 1px solid;
+    padding-bottom: 40px;
+    cursor: pointer;
+
+   
+}
+.of{
+    font-size: 50px;
+    margin-left: 40pc;
+    margin-top: 15px;
+    color: white;
+    font-weight: bold;
+}
+.off a{
+    color: white;
+    font-size: 20px;
+    margin-left:33pc ;
+    
+
+}
+.h4{
+    color: white;
+    font-size: 20px;
+}
+
+
+.loginn:hover{
+    text-decoration: underline;
+    font-size: 1000;
+   
+}
+.contactt{
+    border: 1px solid;
+    display:flex ;
+    flex-direction:row;
+    flex-wrap: wrap;
+}
 
