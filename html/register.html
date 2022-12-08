@@ -36,18 +36,18 @@
         <input type="text" placeholder="Last Name" name="" id="lname">
         </div>
         <div id="info2">
-        <input type="text" name="" id="userame" placeholder="Username">
+        <input type="text" name="" id="username" placeholder="Username">
         <input type="email" id="email" placeholder="Email">
         <input type="password" id="password" placeholder="Password">
     </div>
         <ul id="requirements">
-            <li>Username must contains only letters</li>
-            <li>Email must be valid</li>
             <li>Name and Last Name must have more than 2 characters</li>
+            <li>Username must contains only letters and 8 characters</li>
+            <li>Email must be valid</li>
             <li>Password must have more than 8 characters</li>
         </ul>
-        <button onclick="validateLoginForm()">Create account</button>
-        <p>Already have an account? <a href="/css/login.html" style="color:black;">Log in</a></p>
+        <button onclick="signUp()">Create account</button>
+        <p>Already have an account? <a href="/html/login.html" style="color:black;">Log in</a></p>
     </div>
     <footer>
         <ul class="listatF">
@@ -73,6 +73,6 @@
             </li>
         </ul>
     </footer>
-    <script src="/javascript/script.js"></script>
+    <script src="/javascript/register.js"></script>
 </body>
 </html>

@@ -2,6 +2,7 @@
 /* *{
     transition:ease-in 1s;
 } */
+
 header{
     display: flex;
     justify-content: space-between;
