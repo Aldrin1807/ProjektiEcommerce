@@ -340,7 +340,9 @@ p{
 #information{
     width: 600px;
 }
-
+/* .mySlides fade{
+height: 4px;
+} */
 
 /* Slideshow container */
 .slideshow-container {
