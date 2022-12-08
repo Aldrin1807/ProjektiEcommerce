@@ -329,7 +329,16 @@ p{
     flex-direction:row;
     flex-wrap: wrap;
 }
+#Map{
+    width: 600px;
+}
+#ContactUs{
 
+    display: flex;
+    justify-content: space-evenly;
+}
+#information{
+    width: 600px;
 
 
 /* Slideshow container */
@@ -420,4 +429,32 @@ p{
 @keyframes fade {
   from {opacity: .4}
   to {opacity: 1}
+}
+
+    display: flex  ;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+#inner{
+    display: flex;
+    width: 50px;
+    height: 40px;
+    justify-content: center;
+    flex-wrap: nowrap;
+}
+#c1{
+    width: 348px;
+    height: 100px;
+    text-align: center;
+}
+#send{
+    margin-top: 10px;
+    width: 100px;
+    height: 30px;
+    background-color: #07484a;
+    color: white;
+    border: none;
+    cursor: pointer;
 }
