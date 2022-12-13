@@ -24,6 +24,7 @@ function send(){
         subject.style.border='2px solid green';
     }
     }else{
+        alert(`Thanks dear ${emri.value} we will get back to you ASAP!`);
         window.location.replace('contact.html');
     }
 };

@@ -335,9 +335,13 @@ p{
 #ContactUs{
 
     display: flex;
+    align-items: center;
     justify-content: space-evenly;
 }
 #information{
+    border: solid #07484a;
+    border-radius: 20px;
+    height: 400px;
     width: 600px;
 
     display: flex  ;
