@@ -1,12 +1,12 @@
 
-const produkti1 = document.getElementsByClassName("produkti")[0];
-const produkti2 = document.getElementsByClassName("produkti")[1];
-const produkti3 = document.getElementsByClassName("produkti")[2];
-const produkti4 = document.getElementsByClassName("produkti")[3];
-const produkti5 = document.getElementsByClassName("produkti")[4];
-const produkti7 = document.getElementsByClassName("produkti")[6];
-const produkti6 = document.getElementsByClassName("produkti")[5];
-const produkti8 = document.getElementsByClassName("produkti")[7];
+// const produkti1 = document.getElementsByClassName("produkti")[0];
+// const produkti2 = document.getElementsByClassName("produkti")[1];
+// const produkti3 = document.getElementsByClassName("produkti")[2];
+// const produkti4 = document.getElementsByClassName("produkti")[3];
+// const produkti5 = document.getElementsByClassName("produkti")[4];
+// const produkti7 = document.getElementsByClassName("produkti")[6];
+// const produkti6 = document.getElementsByClassName("produkti")[5];
+// const produkti8 = document.getElementsByClassName("produkti")[7];
 
 
 var h1shi = document.getElementById('h1shi');
@@ -25,6 +25,16 @@ var img6= '/images/6.jpg';
 var img7= '/images/7.jpg';
 var img8= '/images/8.jpg';
 
+
+
+function redirect(n){
+    if(n==1){
+    window.location.replace('produkti.html') 
+    produktiNR(1);
+    } 
+}
+
+
 function produktiNR(n){
     if(n==1){
         imgs.src=img1;
@@ -37,7 +47,6 @@ function produktiNR(n){
             h3shi.innerHTML='500 Euro'
             paragrafi.innerHTML = 'Ky produkt eshte bla bla bla ';
         }else if(n==3){
-            window.location.replace('produkti.html');
             imgs.src=img3;
             h1shi.innerHTML= 'Produkti 3';
             h3shi.innerHTML='500 Euro'
@@ -70,13 +79,8 @@ function produktiNR(n){
         }
     }
 
-// produkti1.onclick = () =>{
-//     produktiNR(1);
-// }
 
 
-// console.log(imgs.src);
-produktiNR(8);
 
 
 
