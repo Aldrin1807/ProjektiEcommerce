@@ -26,15 +26,6 @@ var img7= '/images/7.jpg';
 var img8= '/images/8.jpg';
 
 
-
-function redirect(n){
-    if(n==1){
-    window.location.replace('produkti.html') 
-    produktiNR(1);
-    } 
-}
-
-
 function produktiNR(n){
     if(n==1){
         imgs.src=img1;
@@ -59,7 +50,7 @@ function produktiNR(n){
         }else if(n==5){
             imgs.src=img5;
             h1shi.innerHTML= 'Produkti 5';
-            h3shi.innerHTML='500 Euro'
+            h3shi.innerHTML='490 Euro'
             paragrafi.innerHTML = 'Ky produkt eshte bla bla bla ';
         }else if(n==6){
             imgs.src=img6;
@@ -78,6 +69,18 @@ function produktiNR(n){
             paragrafi.innerHTML = 'Ky produkt eshte bla bla bla ';
         }
     }
+
+
+produktiNR(3);
+
+
+function redirect(n){
+    
+    window.location.replace('produkti.html')
+    produktiNR(n);
+}
+
+
 
 
 
