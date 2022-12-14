@@ -14,8 +14,9 @@ header{
     display: flex;
     justify-content: space-between;
     width: 500px;
-    align-items: center;
-    padding-left: 600px; 
+    align-items: center; 
+
+    padding-left: 40px;
 }
 .kategorite a{
     color: #07484a;
