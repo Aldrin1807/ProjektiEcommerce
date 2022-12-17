@@ -1,18 +1,18 @@
 
 const produkti1 = document.getElementsByClassName("produkti")[0];
-// const produkti2 = document.getElementsByClassName("produkti")[1];
-// const produkti3 = document.getElementsByClassName("produkti")[2];
-// const produkti4 = document.getElementsByClassName("produkti")[3];
-// const produkti5 = document.getElementsByClassName("produkti")[4];
-// const produkti7 = document.getElementsByClassName("produkti")[6];
-// const produkti6 = document.getElementsByClassName("produkti")[5];
-// const produkti8 = document.getElementsByClassName("produkti")[7];
+const produkti2 = document.getElementsByClassName("produkti")[1];
+const produkti3 = document.getElementsByClassName("produkti")[2];
+const produkti4 = document.getElementsByClassName("produkti")[3];
+const produkti5 = document.getElementsByClassName("produkti")[4];
+const produkti7 = document.getElementsByClassName("produkti")[6];
+const produkti6 = document.getElementsByClassName("produkti")[5];
+const produkti8 = document.getElementsByClassName("produkti")[7];
 
 var h1shi = document.getElementById('h1shi');
 var h3shi = document.getElementById('h3shi');
 var paragrafi = document.getElementById('paragrafi');
 // var div = document.getElementById('foto');
-var imgs = document.getElementById('fotoja');
+// var imgs = document.getElementById('fotoja').src;
 var img1= '/images/1.jpg';
 var img2= '/images/2.jpg';
 var img3= '/images/3.jpg';
@@ -21,14 +21,15 @@ var img5= '/images/5.jpg';
 var img6= '/images/6.jpg';
 var img7= '/images/7.jpg';
 var img8= '/images/8.jpg';
+
 function produktiNR(n){
     if(n==1){
-        imgs.src=img1;
+        imgs=img1;
         h1shi.innerHTML= 'Produkti 1';
         h3shi.innerHTML='500 Euro';
         paragrafi.innerHTML = 'Ky produkt eshte bla bla bla ';  
         }else if(n==2){
-            imgs.src=img2;
+            imgs=img2;
             h1shi.innerHTML= 'Produkti 2';
             h3shi.innerHTML='500 Euro'
             paragrafi.innerHTML = 'Ky produkt eshte bla bla bla ';
@@ -64,9 +65,18 @@ function produktiNR(n){
             paragrafi.innerHTML = 'Ky produkt eshte bla bla bla ';
         }
     };
-
-produktiNR(3);
-
+// p1 = localStorage.getItem(produkti1);
+// p1.addEventListener('click',function(){
+//         produktiNR(1);
+//         window.location.href = 'produkti.html';
+        
+//     })
+variabla = 1;
+produkti1.onclick =()=>{
+    this.variabla=1;
+    window.location.href='produkti.html';  
+}
+produktiNR(variabla);
 
 
 // function produkti1(){
