@@ -8,20 +8,24 @@ const produkti7 = document.getElementsByClassName("produkti")[6];
 const produkti6 = document.getElementsByClassName("produkti")[5];
 const produkti8 = document.getElementsByClassName("produkti")[7];
 
+//Elementet qe duhet te ndryshohen ne faqen produkti.html
 var h1shi = document.getElementById('h1shi');
 var h3shi = document.getElementById('h3shi');
 var paragrafi = document.getElementById('paragrafi');
-// var div = document.getElementById('foto');
-// var imgs = document.getElementById('fotoja').src;
-var img1= '/images/1.jpg';
-var img2= '/images/2.jpg';
-var img3= '/images/3.jpg';
-var img4= '/images/4.jpg';
-var img5= '/images/5.jpg';
-var img6= '/images/6.jpg';
-var img7= '/images/7.jpg';
-var img8= '/images/8.jpg';
+var imgs = document.getElementById('fotoja');
 
+//Fotot per secilin produkt
+var img1= '../images/1.jpg';
+var img2= '../images/2.jpg';
+var img3= '../images/3.jpg';
+var img4= '../images/4.jpg';
+var img5= '../images/5.jpg';
+var img6= '../images/6.jpg';
+var img7= '../images/7.jpg';
+var img8= '../images/8.jpg';
+
+
+//Funksioni qe i ndryshon elementet varesisht prej parametrit
 function produktiNR(n){
     if(n==1){
         imgs=img1;
@@ -34,64 +38,50 @@ function produktiNR(n){
             h3shi.innerHTML='500 Euro'
             paragrafi.innerHTML = 'Ky produkt eshte bla bla bla ';
         }else if(n==3){
-            imgs.src=img3;
+            imgs=img3;
             h1shi.innerHTML= 'Produkti 3';
             h3shi.innerHTML='500 Euro'
             paragrafi.innerHTML = 'Ky produkt eshte bla bla bla ';
         }else if(n==4){
-            imgs.src=img4;
+            imgs=img4;
             h1shi.innerHTML= 'Produkti 4';
             h3shi.innerHTML='500 Euro'
             paragrafi.innerHTML = 'Ky produkt eshte bla bla bla ';
         }else if(n==5){
-            imgs.src=img5;
+            imgs=img5;
             h1shi.innerHTML= 'Produkti 5';
             h3shi.innerHTML='490 Euro'
             paragrafi.innerHTML = 'Ky produkt eshte bla bla bla ';
         }else if(n==6){
-            imgs.src=img6;
+            imgs=img6;
             h1shi.innerHTML= 'Produkti 6';
             h3shi.innerHTML='500 Euro'
             paragrafi.innerHTML = 'Ky produkt eshte bla bla bla ';
         }else if(n==7){
-            imgs.src=img7;
+            imgs=img7;
             h1shi.innerHTML= 'Produkti 7';
             h3shi.innerHTML='500 Euro'
             paragrafi.innerHTML = 'Ky produkt eshte bla bla bla ';
         }else if(n==8){
-            imgs.src=img8;
+            imgs=img8;
             h1shi.innerHTML= 'Produkti 8';
             h3shi.innerHTML='500 Euro'
             paragrafi.innerHTML = 'Ky produkt eshte bla bla bla ';
         }
     };
-// p1 = localStorage.getItem(produkti1);
-// p1.addEventListener('click',function(){
-//         produktiNR(1);
-//         window.location.href = 'produkti.html';
+
+
+    //Nqs e thirrim jasht funksionit te addeventlistenerit funksionon per me ndrru kontentin
+    // produktiNR(8);
+
+    produkti1.addEventListener('click',function(){
+        // produktiNR(1);
+        //Nqs e kem para nuk e ndrron faqen hiq
+        window.location.href = 'produkti.html';
+        produktiNR(1);
+        //Nqs osht mbrapa vetem e ndrron faqen se ekzekuton funksionin hiq.
         
-//     })
-variabla = 1;
-produkti1.onclick =()=>{
-    this.variabla=1;
-    window.location.href='produkti.html';  
-}
-produktiNR(variabla);
-
-
-// function produkti1(){
-//     window.location.href = 'produkti.html'
-//     imgs.src=img1;
-//     h1shi.innerHTML= 'Produkti 1';
-//     h3shi.innerHTML='500 Euro';
-//     paragrafi.innerHTML = 'Ky produkt eshte bla bla bla ';  
-// }   
-// var n=1;
-// function redirectToPage(nr){
-//     window.location.href='produkti.html';
-//     n=nr;
-// }
-// produktiNR(n);
+    });
 
 
 
