@@ -1,4 +1,4 @@
-var vargu = ['/images/bg.webp','/images/bg1.webp','/images/bg2.webp'];
+var vargu = ['images/bg.webp','images/bg1.webp','images/bg2.webp'];
 
 var i=0;
 const koha = 2500;
