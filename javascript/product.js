@@ -28,47 +28,48 @@ var img8= '../images/8.jpg';
 //Funksioni qe i ndryshon elementet varesisht prej parametrit
 function produktiNR(n){
     if(n==1){
-        imgs=img1;
+        imgs.src=img1;
         h1shi.innerHTML= 'Produkti 1';
         h3shi.innerHTML='500 Euro';
         paragrafi.innerHTML = 'Ky produkt eshte bla bla bla ';  
         }else if(n==2){
-            imgs=img2;
+            imgs.src=img2;
             h1shi.innerHTML= 'Produkti 2';
             h3shi.innerHTML='500 Euro';
             paragrafi.innerHTML = 'Ky produkt eshte bla bla bla ';
         }else if(n==3){
-            imgs=img3;
+            imgs.src=img3;
             h1shi.innerHTML= 'Produkti 3';
             h3shi.innerHTML='500 Euro';
             paragrafi.innerHTML = 'Ky produkt eshte bla bla bla ';
         }else if(n==4){
-            imgs=img4;
+            imgs.src=img4;
             h1shi.innerHTML= 'Produkti 4';
             h3shi.innerHTML='500 Euro';
             paragrafi.innerHTML = 'Ky produkt eshte bla bla bla ';
         }else if(n==5){
-            imgs=img5;
+            imgs.src=img5;
             h1shi.innerHTML= 'Produkti 5';
             h3shi.innerHTML='490 Euro';
             paragrafi.innerHTML = 'Ky produkt eshte bla bla bla ';
         }else if(n==6){
-            imgs=img6;
+            imgs.src=img6;
             h1shi.innerHTML= 'Produkti 6';
             h3shi.innerHTML='500 Euro';
             paragrafi.innerHTML = 'Ky produkt eshte bla bla bla ';
         }else if(n==7){
-            imgs=img7;
+            imgs.src=img7;
             h1shi.innerHTML= 'Produkti 7';
             h3shi.innerHTML='500 Euro';
             paragrafi.innerHTML = 'Ky produkt eshte bla bla bla ';
         }else if(n==8){
-            imgs=img8;
+            imgs.src=img8;
             h1shi.innerHTML= 'Produkti 8';
             h3shi.innerHTML='500 Euro';
             paragrafi.innerHTML = 'Ky produkt eshte bla bla bla ';
         }
     };
+
 
     class VStatic{
         static n = 1;
