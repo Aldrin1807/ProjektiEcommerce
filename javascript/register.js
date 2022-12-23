@@ -4,34 +4,41 @@ const username = document.getElementById('username');
 const emaili =document.getElementById('email');
 const passwordi = document.getElementById('password');
 
-const userRegex =/^[a-zA-Z]+$/;
-const emailRegex =/^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+const emRegex = /^[A-Za-z0-9]{2,}$/;
+const usernameRegex = /^[A-Za-z]{6,}$/;
+const emailRegex = /^[A-Za-z0-9]{2,10}[@][a-z]{1,10}\.[a-z]{2,3}$/;
+const passiRegex = /^([A-za-z0-9]{8,})$/;
 
 function signUp(){
-    if(emri.value.trim()==''||emri.value.length<2){
-        emri.style.border='2px solid red';
+    if(!emRegex.test(emri.value)||!emRegex.test(mbiemri.value)||!usernameRegex.test(username.value)||!emailRegex.test(emaili.value)||!passiRegex.test(passwordi.value)){
+    if(!emRegex.test(emri.value)){
+        emri.style.border='1.5px solid red';
     }else{
-        emri.style.border='2px solid green';
+        emri.style.border='1.5px solid green';
     }
-    if(mbiemri.value.trim()==''||mbiemri.value.length<2){
-        mbiemri.style.border='2px solid red';
+    if(!emRegex.test(mbiemri.value)){
+        mbiemri.style.border='1.5px solid red';
     }else{
-        mbiemri.style.border='2px solid green';
+        mbiemri.style.border='1.5px solid green';
     }
-    if(username.value.trim()==''||!userRegex.test(username.value)||username.value.length<8){
-        username.style.border='2px solid red';
+    if(!usernameRegex.test(username.value)){
+        username.style.border='1.5px solid red';
     }else{
-        username.style.border='2px solid green';
+        username.style.border='1.5px solid green';
     }
-    if(emaili.value.trim()==''||!emailRegex.test(emaili.value)){
-        emaili.style.border='2px solid red';
+    if(!emailRegex.test(emaili.value)){
+        emaili.style.border='1.5px solid red';
     }else{
-        emaili.style.border='2px solid green';
+        emaili.style.border='1.5px solid green';
     }
-    if(passwordi.value.trim()==''||passwordi.value.length<8){
-        passwordi.style.border='2px solid red';
+    if(!passiRegex.test(passwordi.value)){
+        passwordi.style.border='1.5px solid red';
       }else{
-        passwordi.style.border='2px solid green';
+        passwordi.style.border='1.5px solid green';
     }
-   // window.location.replace('../index.html');
+}else{
+    alert(`Hello dear ${emri.value} shortly u will be redirected to the home page`);
+    window.location.replace('../index.html');
+}
+   
 };

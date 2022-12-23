@@ -1,12 +1,12 @@
 
-const produkti1 = document.getElementsByClassName("produkti")[0];
-const produkti2 = document.getElementsByClassName("produkti")[1];
-const produkti3 = document.getElementsByClassName("produkti")[2];
-const produkti4 = document.getElementsByClassName("produkti")[3];
-const produkti5 = document.getElementsByClassName("produkti")[4];
-const produkti7 = document.getElementsByClassName("produkti")[6];
-const produkti6 = document.getElementsByClassName("produkti")[5];
-const produkti8 = document.getElementsByClassName("produkti")[7];
+// const produkti1 = document.getElementsByClassName("produkti")[0];
+// const produkti2 = document.getElementsByClassName("produkti")[1];
+// const produkti3 = document.getElementsByClassName("produkti")[2];
+// const produkti4 = document.getElementsByClassName("produkti")[3];
+// const produkti5 = document.getElementsByClassName("produkti")[4];
+// const produkti7 = document.getElementsByClassName("produkti")[6];
+// const produkti6 = document.getElementsByClassName("produkti")[5];
+// const produkti8 = document.getElementsByClassName("produkti")[7];
 
 //Elementet qe duhet te ndryshohen ne faqen produkti.html
 var h1shi = document.getElementById('h1shi');
