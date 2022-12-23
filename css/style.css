@@ -215,8 +215,8 @@ background-position-y: 70%;
  height: 708px;
  margin-left: -10px;
  margin-right: -8px;
- margin-bottom: -100px;
  display: flex
+ 
 }
 #contentMbajtesi{
     display: flex;
@@ -380,4 +380,52 @@ p{
     color: white;
     border: none;
     cursor: pointer;
+}
+#info{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.box img{
+    height: 250px;
+    width: 200px;
+}
+.box{
+    border: solid #07484a;
+    border-radius: 20px;
+    height: 600px;
+    width: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+#para{
+    text-align: center;
+    background-image: url('/images/photo.jpg');
+    width: 1400px;
+    height: 1000px;
+    display: flex;
+    margin: 0 auto;
+}
+#para h3{
+    color: #07484a;
+    padding: 200px;
+    
+}
+#sale{
+    display: flex;
+    justify-content: space-around;
+    height: 150;
+    margin-bottom: 50px;
+}
+.box1{
+    height: 240px;
+    width: 450px;
+}
+.box1 img{
+    width: 450px;
 }
