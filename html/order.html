@@ -67,7 +67,7 @@
         <div id="innerForm">
             
             <p>Contact Name:</p>
-            <input type="text" name="" id="">
+            <input type="text" name="" id="contact">
             <p>Country/Region</p>
             <select id="country" name="country">
                 <option>select country</option>
@@ -325,15 +325,15 @@
                 <option value="ZW">Zimbabwe</option>
             </select>
             <p>Street Address:</p>
-                <input type="text" name="" id="">
+                <input type="text" name="" id="address">
             <input type="text" placeholder="Apartment, suite (Optional)">
             <p for="">City:</p>
-            <input type="text" name="" id="">
+            <input type="text" name="" id="city">
             <p for="">Zip/Postal Code:</p>
-            <input type="text" name="" id="">
+            <input type="text" name="" id="zip">
             <p for="">Tel:</p>
-            <input type="tel" name="" id="">
-            <button>Save and order to this address</button>
+            <input type="tel" name="" id="phone">
+            <button onclick="order()">Save and order to this address</button>
         </div>
      </div>
 
@@ -361,6 +361,7 @@
             </li>
         </ul>
     </footer>
+    <script src="../javascript/order.js"></script>
  
 </body>
 </html>
