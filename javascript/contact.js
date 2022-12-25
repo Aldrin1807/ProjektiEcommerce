@@ -1,22 +1,23 @@
 const emri = document.getElementById('name');
-const emailii = document.getElementById('email');
+const emaili = document.getElementById('email');
 
 const subject = document.getElementById('c1');
 
-const emailRegex =/^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+const emriRegex =/^[A-Za-z\s]{3,}$/;
+const emailRegex = /^[A-Za-z0-9]{2,10}[@][a-z]{1,10}\.[a-z]{2,3}$/;
 
 
 function send(){
-    if(emri.value.trim()==''||emri.value.length<=2||emailii.value.trim()==''||!emailRegex.test(emailii.value)||subject.value.trim()==''||subject.value.length<=10){
-    if(emri.value.trim()==''||emri.value.length<=2){
+    if(!emriRegex.test(emri.value)||!emailRegex.test(emaili.value)||subject.value.trim()==''||subject.value.length<=10){
+    if(!emriRegex.test(emri.value)){
         emri.style.border='2px solid red';
     }else{
         emri.style.border='2px solid green';
     }
-    if(emailii.value.trim()==''||!emailRegex.test(emailii.value)){
-        emailii.style.border='2px solid red';
+    if(!emailRegex.test(emaili.value)){
+        emaili.style.border='2px solid red';
     }else{
-        emailii.style.border='2px solid green';
+        emaili.style.border='2px solid green';
     }
     if(subject.value.trim()==''||subject.value.length<=10){
         subject.style.border='2px solid red';

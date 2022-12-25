@@ -391,7 +391,7 @@ p{
     width: 200px;
 }
 .box{
-    border: solid #07484a;
+    border: solid 0.5px #07484a;
     border-radius: 20px;
     height: 600px;
     width: 600px;
@@ -400,8 +400,6 @@ p{
     justify-content: center;
     flex-direction: column;
     flex-wrap: wrap;
-    padding-left: 10px;
-    padding-right: 10px;
 }
 #para{
     text-align: center;
@@ -416,6 +414,10 @@ p{
     padding: 200px;
     
 }
+.listatF li{
+    color: white;
+    list-style: none;
+}
 #sale{
     display: flex;
     justify-content: space-around;
@@ -428,4 +430,13 @@ p{
 }
 .box1 img{
     width: 450px;
+}
+#orderInfo ul, li{
+    list-style: circle;
+    color: #07484a;
+}
+.comments{
+    font-weight: normal;
+    font-style: italic;
+    padding: 15px;
 }

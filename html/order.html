@@ -9,7 +9,7 @@
 </head>
 <style>
     #order{
-        height: 650px;
+        height: 950px;
         display: flex;
         justify-content: center;
         margin-top: 80px;
@@ -65,12 +65,23 @@
      </header>
      <div id="order">
         <div id="innerForm">
-            
+            <div id="orderInfo">
+                <h4>All subjects should be filled out carefully</h4>
+                <ul>
+                   
+                    <li>Name must have more than 3 characters</li>
+                    <li>You must select a country</li>
+                    <li>You must enter a correct Street Address</li>
+                    <li>You must enter a correct ZipCode</li>
+                    <li>The city must match your Zipcode</li>
+                    <li>The phone number must be of this format xxx-xxx-xxx</li>
+                </ul>
+            </div> 
             <p>Contact Name:</p>
             <input type="text" name="" id="contact">
             <p>Country/Region</p>
             <select id="country" name="country">
-                <option>select country</option>
+                <option value="">select country</option>
                 <option value="AF">Afghanistan</option>
                 <option value="AX">Aland Islands</option>
                 <option value="AL">Albania</option>
